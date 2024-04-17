@@ -1,0 +1,100 @@
+.detail{
+    min-height: 593px;
+    padding: 96px 0px 66px 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recommendmenu {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.modal-content {
+    border-radius: 50px;
+    padding: 60px 80px;
+}
+
+.poptitle {
+    font-size: 32px;
+    font-weight: 600;
+    padding-right: 20px;
+    margin-top: 40px;
+}
+
+.popmenuoptext {
+    font-weight: 700;
+}
+
+.mat_img{
+    width: 350px;
+    margin-top: 20px;
+}
+
+.container_1{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.minicon{
+    margin-left: 90px;
+
+}
+
+
+.container_1 .btn {
+    display: inline-block;
+    width: 162px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: -.3px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #e21f26;
+    background: #e21f26;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#storeBtn {
+    background-color: rgb(255 193 54); 
+    border-color:  rgb(255 193 54);
+}
+
+#orderBtn{
+
+}
+
+
+.container_1 .btn_area .btn {
+    border-radius: 8px;
+}
+.container_1 .btn_area .btn_full:first-child {
+    margin-top: 0;
+}
+
+.container_1 .btn_area .btn_full {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+}
+
+
+
+
+
+    li{
+        list-style: none;
+        cursor: pointer;
+    }
+
+
+    .container_1 .btn_area .btn_full:first-child {
+        margin-top: 55px;
+    }

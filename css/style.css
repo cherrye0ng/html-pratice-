@@ -1,0 +1,140 @@
+/* 헤더 */
+
+.header_logo{
+    width: 20%;
+    font-size: 32px;
+    color: inherit;
+    line-height: 70px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.header_logo img{
+width: 139px;
+cursor: pointer;
+}
+.header_top{
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-top: 3px solid rgb(222, 29, 36);
+    height: 120px;
+}
+header{
+    display: flex;
+    height: 100%;
+}
+.intro_logo{
+    text-align: center;
+}
+
+.intro_logo img{
+    width: 80px;
+  
+}
+
+.header_login{
+    position: absolute;
+    right: 0;
+    top: 17px;
+    float: right;
+    margin-right: 99px;
+    cursor: pointer;
+}
+.header_member{
+    position: absolute;
+    right: 0;
+    top: 17px;
+    float: right;
+    margin-right: 29px;
+    cursor: pointer;
+}
+
+header ul{
+    display: flex;
+    width: 80%;
+    margin-top: 66px;
+    color: inherit;
+}
+header ul li{
+    list-style: none;
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    font-size: 21px;
+
+}
+
+/* 메인 */
+
+.main{
+    min-height: 593px;
+    padding: 38px 0px 66px 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.main p{
+    font-size: 24px;
+    font-weight: 600;
+}
+.mainpagetitle{
+    position: relative;
+font-size: 38px;
+    font-weight: 700;
+}
+
+.menu_box img{
+    width: 220px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.menu_box :hover img {
+    transform: scale(1.2, 1.2); transition-duration: 0.5s;
+  }
+
+
+
+.container{
+
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.menu_box{
+    display: block;
+    margin: 64px;
+    text-align: center;
+}
+
+
+
+
+
+/* 푸터 */
+
+footer{
+    border-top: 1px solid #cccccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footlogo {
+    width: 30%;
+    margin-left: 45px;
+}
+
+footer img
+{
+    width: 100px;
+    cursor: pointer;
+}
+
+.footinfo {
+    width: 28%;
+    font-size: 14px;
+    
+}

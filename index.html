@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div class="header_top">
+        <header>
+
+            <div class="header_logo">
+                <img src="./img/logo.png" alt="" onClick="location.href='index.html'">
+            </div>
+
+            <p class="header_login" onClick="location.href='login.html'">로그인 |</p>
+            <p class="header_member" onClick="location.href='member.html'">회원가입</p>
+            <ul>
+                <li>메뉴안내</li>
+                <li>이벤트안내</li>
+                <li>매장찾기</li>
+                <li>고객안내</li>
+                <li>가맹문의</li>
+            </ul>
+
+        </header>
+    </div>
+    <!-- 메인 -->
+    <div class="main">
+        <div class="main_top">
+        <div class="mainpagetitle">메인메뉴</div>
+        <ul id="menugrp-list" name="menugrp-list">
+            <li active=""><span onclick="javascript:display_menu(this, '202402260002', 1, '메인메뉴' );">메인메뉴</span></li>
+            <li><span onclick="javascript:display_menu(this, '202402260002', 2, '닭발메뉴' );">닭발메뉴</span></li>
+            <li><span onclick="javascript:display_menu(this, '202402260002', 3, '세트메뉴' );">세트메뉴</span></li>
+            <li><span onclick="javascript:display_menu(this, '202402260002', 4, '사이드/음료' );">사이드/음료</span></li>
+            <li><span onclick="javascript:display_menu(this, '202402260002', 5, '토핑' );">토핑</span></li>
+            <li><span onclick="javascript:display_menu(this, '202402260002', 6, '밀키트' );">밀키트</span></li>
+        </ul>
+    </div>
+        <div class="container">
+            <div class="menu_box">
+                <img 
+                    src="https://www.yupdduk.com/bod/config/menu/%EC%97%BD%EA%B8%B0%EB%A9%94%EB%89%B4_6_1_1_1_1.png"
+                    alt="" onClick="location.href='detail.html'">
+                <p class="mp_menutitle">기본 떡볶잉</p>
+            </div>
+            <div class="menu_box">
+                <img 
+                    src="https://www.yupdduk.com/bod/config/menu/%EB%A1%9C%EC%A0%9C%EB%A9%94%EB%89%B4_5_1_1_1_1.png"
+                    alt="" onClick="location.href='detail.html'">
+                <p class="mp_menutitle">로제 떡볶잉</p>
+            </div>
+            <div class="menu_box">
+                <img 
+                    src="https://www.yupdduk.com/bod/config/menu/%EB%A7%88%EB%9D%BC%EB%96%A1%EB%B3%B6%EC%9D%B4_5_1_1_1_1.png"
+                    alt="" onClick="location.href='detail.html'">
+                <p class="mp_menutitle">마라 떡볶잉</p>
+            </div>
+            <div class="menu_box">
+                <img 
+                    src="https://www.yupdduk.com/bod/config/menu/24.02.22%20%EB%A7%88%EB%9D%BC%EB%A1%9C%EC%A0%9C%EB%96%A1%EB%B3%B6%EC%9D%B4_500x500_2_1_1_1.png"
+                    alt="" onClick="location.href='detail.html'">
+                <p class="mp_menutitle">로제마라 떡볶잉</p>
+            </div>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer>
+        <div class="footlogo">
+            <img src="./img/logo.png" alt="" onClick="location.href='index.html'">
+        </div>
+        <div class="footinfo">
+            <p>이용약관</p>
+            <p>개인정보처리방침</p>
+            <p>법적고지</p>
+            <p>영상정보처리기기운영/관리</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

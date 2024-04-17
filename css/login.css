@@ -1,0 +1,70 @@
+
+
+.btn {
+    display: inline-block;
+    width: 162px;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: -.3px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #e21f26;
+    background: #e21f26;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.btn_area .btn {
+    border-radius: 8px;
+}
+.btn_area .btn_full:first-child {
+    margin-top: 0;
+}
+
+.btn_area .btn_full {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+}
+
+.content {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 38px 45px 70px;
+    box-sizing: border-box;
+}
+.inp {
+    display: inline-block;
+    padding: 6px 9px;
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    color: #222;
+    line-height: 28px;
+    border: 1px solid gray;
+    background-color: #fff;
+    vertical-align: top;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+
+#id{
+    margin-bottom: 20px;
+}
+
+#password{
+    margin-bottom: 20px;
+}
+
+legend{
+    margin-bottom: 20px;
+    text-align: center;
+}
