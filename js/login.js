@@ -19,6 +19,7 @@
             alert("필수 입력란이 비어있습니다. 입력해주세요");
         } else {
             alert('로그인되었습니다!  ');
+            location.href = 'index.html';
         }
     }
 
@@ -51,5 +52,6 @@
             alert("필수 입력란이 비어있습니다. 입력해주세요");
         } else {
             alert('떡볶잉의 회원이 되었어요! ');
+            location.href = 'index.html';
         }
     }
