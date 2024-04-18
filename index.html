@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
 </head>
 
 <body>
+
+
     <!-- 헤더 -->
     <div class="header_top">
         <header>
@@ -29,43 +34,101 @@
 
         </header>
     </div>
+
+    <!-- 중간슬라이더 -->
+    <div class="middle slider swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide mainbanner_slide">
+                <img src="https://www.yupdduk.com/bod/config/banner/웹_엽떡_모바일배너_3000x600.png" style="border: 0;"
+                    alt="엽기떡볶이 배너">
+            </div>
+            <div class="swiper-slide mainbanner_slide">
+                <img src="https://www.yupdduk.com/bod/config/banner/24.02.22%20%EC%97%BD%EB%96%A1%EC%9D%80%EC%97%BD%EB%96%A1%EC%95%B1%20%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20pc%203000%20600.png"
+                    style="border: 0;" alt="엽기떡볶이 배너">
+            </div>
+            <div class="swiper-slide mainbanner_slide">
+                <img src="https://www.yupdduk.com/bod/config/banner/웹_엽떡_모바일배너_3000x600.png" style="border: 0;"
+                    alt="엽기떡볶이 배너">
+            </div>
+        </div>
+    </div>
+
+
     <!-- 메인 -->
     <div class="main">
-        <div class="main_top">
-        <div class="mainpagetitle">메인메뉴</div>
-        <ul id="menugrp-list" name="menugrp-list">
-            <li active=""><span onclick="javascript:display_menu(this, '202402260002', 1, '메인메뉴' );">메인메뉴</span></li>
-            <li><span onclick="javascript:display_menu(this, '202402260002', 2, '닭발메뉴' );">닭발메뉴</span></li>
-            <li><span onclick="javascript:display_menu(this, '202402260002', 3, '세트메뉴' );">세트메뉴</span></li>
-            <li><span onclick="javascript:display_menu(this, '202402260002', 4, '사이드/음료' );">사이드/음료</span></li>
-            <li><span onclick="javascript:display_menu(this, '202402260002', 5, '토핑' );">토핑</span></li>
-            <li><span onclick="javascript:display_menu(this, '202402260002', 6, '밀키트' );">밀키트</span></li>
-        </ul>
-    </div>
-        <div class="container">
+        <div class="main_top" style="position: relative;">
+            <div class="mainpagetitle">메인메뉴</div>
+            <ul id="menugrp-list" name="menugrp-list">
+                <li id="mainMenu" style="display: inline-block;"><span>메인메뉴</span></li>
+                <li id="chickenMenu" style="display: inline-block;"><span>닭발메뉴</span></li>
+                <li id="toppingMenu" style="display: inline-block;"><span>토핑</span></li>
+            </ul>
+        </div>
+
+        <!-- 메인메뉴 -->
+        <div class="slider slider-content mainMenu" style="    display: flex;">
             <div class="menu_box">
-                <img 
-                    src="https://www.yupdduk.com/bod/config/menu/%EC%97%BD%EA%B8%B0%EB%A9%94%EB%89%B4_6_1_1_1_1.png"
+                <img src="https://www.yupdduk.com/bod/config/menu/%EC%97%BD%EA%B8%B0%EB%A9%94%EB%89%B4_6_1_1_1_1.png"
                     alt="" onClick="location.href='detail.html'">
-                <p class="mp_menutitle">기본 떡볶잉</p>
+                <p class="mp_menutitle">기본 떡볶이</p>
             </div>
             <div class="menu_box">
-                <img 
-                    src="https://www.yupdduk.com/bod/config/menu/%EB%A1%9C%EC%A0%9C%EB%A9%94%EB%89%B4_5_1_1_1_1.png"
+                <img src="https://www.yupdduk.com/bod/config/menu/%EB%A1%9C%EC%A0%9C%EB%A9%94%EB%89%B4_5_1_1_1_1.png"
                     alt="" onClick="location.href='detail.html'">
-                <p class="mp_menutitle">로제 떡볶잉</p>
+                <p class="mp_menutitle">로제 떡볶이</p>
             </div>
             <div class="menu_box">
-                <img 
-                    src="https://www.yupdduk.com/bod/config/menu/%EB%A7%88%EB%9D%BC%EB%96%A1%EB%B3%B6%EC%9D%B4_5_1_1_1_1.png"
+                <img src="https://www.yupdduk.com/bod/config/menu/%EB%A7%88%EB%9D%BC%EB%96%A1%EB%B3%B6%EC%9D%B4_5_1_1_1_1.png"
                     alt="" onClick="location.href='detail.html'">
-                <p class="mp_menutitle">마라 떡볶잉</p>
+                <p class="mp_menutitle">마라 떡볶이</p>
             </div>
             <div class="menu_box">
-                <img 
-                    src="https://www.yupdduk.com/bod/config/menu/24.02.22%20%EB%A7%88%EB%9D%BC%EB%A1%9C%EC%A0%9C%EB%96%A1%EB%B3%B6%EC%9D%B4_500x500_2_1_1_1.png"
+                <img src="https://www.yupdduk.com/bod/config/menu/24.02.22%20%EB%A7%88%EB%9D%BC%EB%A1%9C%EC%A0%9C%EB%96%A1%EB%B3%B6%EC%9D%B4_500x500_2_1_1_1.png"
                     alt="" onClick="location.href='detail.html'">
-                <p class="mp_menutitle">로제마라 떡볶잉</p>
+                <p class="mp_menutitle">로제마라 떡볶이</p>
+            </div>
+        </div>
+
+        <!-- 닭발메뉴 -->
+        <div class="slider slider-content chickenMenu" style="    display: flex;">
+            <div class="menu_box">
+                <img src="https://www.yupdduk.com/bod/config/menu/%EC%97%BD%EA%B8%B0%EB%AC%B4%EB%BC%88%EB%8B%AD%EB%B0%9C_4_1_1_1_1.png"
+                    alt="" onClick="location.href='detail.html'">
+                <p class="mp_menutitle">무뼈닭발</p>
+            </div>
+            <div class="menu_box">
+                <img src="https://www.yupdduk.com/bod/config/menu/%EC%97%BD%EA%B8%B0%EA%B5%AD%EB%AC%BC%EB%8B%AD%EB%B0%9C_4_1_1_1_1.png"
+                    alt="" onClick="location.href='detail.html'">
+                <p class="mp_menutitle">국물닭발</p>
+            </div>
+            <div class="menu_box">
+                <img src="https://www.yupdduk.com/bod/config/menu/%EC%97%BD%EA%B8%B0%EC%98%A4%EB%8F%8C%EB%BC%88_4_1_1_1_1.png"
+                    alt="" onClick="location.href='detail.html'">
+                <p class="mp_menutitle">오돌뼈</p>
+            </div>
+        </div>
+
+        <!-- 토핑 -->
+        <div class="slider slider-content toppingMenu" style="    display: flex;">
+            <div class="menu_box">
+                <img src="https://www.yupdduk.com/bod/config/menu/24.02.22%20%EC%BD%98%EB%A7%88%EC%9A%94%20500x500_2_1_1.png"
+                    alt="" onClick="location.href='detail.html'">
+                <p class="mp_menutitle">콘마요</p>
+            </div>
+            <div class="menu_box">
+                <img src="https://www.yupdduk.com/bod/config/menu/%ED%86%A0%ED%95%91_%EB%AA%A8%EC%A7%9C%EC%B9%98%EC%A6%88_7_1_1_1_1.png"
+                    alt="" onClick="location.href='detail.html'">
+                <p class="mp_menutitle">모짜치즈</p>
+            </div>
+            <div class="menu_box">
+                <img src="https://www.yupdduk.com/bod/config/menu/%ED%86%A0%ED%95%91_%ED%86%B5%EC%9C%A0%EB%B6%80_5_1_1_1_1.png"
+                    alt="" onClick="location.href='detail.html'">
+                <p class="mp_menutitle">통유부</p>
+            </div>
+            <div class="menu_box">
+                <img src="https://www.yupdduk.com/bod/config/menu/%ED%86%A0%ED%95%91_%EB%8B%B9%EB%A9%B4%EC%82%AC%EB%A6%AC_5_1_1_1_1.png"
+                    alt="" onClick="location.href='detail.html'">
+                <p class="mp_menutitle">당면사리</p>
             </div>
         </div>
     </div>
@@ -82,7 +145,10 @@
         </div>
 
     </footer>
-
+    <script src="./js/main.js"></script>
+    
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

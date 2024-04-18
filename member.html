@@ -37,7 +37,7 @@
 
             <p id="errorDescription" class="noti_txt " style="display:none;"></p>
 
-            <form id="loginForm" name="loginForm" method="post">
+            <form id="JoinForm" name="JoinForm" method="post">
                 <div>
                     <div class="intro_logo">
                         <img src="./img/logo.png" alt="" onClick= "location.href='index.html'">
@@ -54,18 +54,18 @@
                         </div>
                         <p style=" font-size: 13px; color: gray;" >비밀번호</p>
                         <span class="inp_bx">
-                            <input type="password" id="password" class="inp" title="비밀번호" placeholder="비밀번호"
-                                maxlength="20" style="ime-mode:disabled;">
+                            <input type="password" id="password" name="password" class="inp" title="비밀번호" placeholder="비밀번호"
+                                maxlength="20" style="ime-mode:disabled;"  value=""> 
                         </span>
                         <p style=" font-size: 13px; color: gray;">비밀번호 재확인</p>
                         <span class="inp_bx">
-                            <input type="password" id="password" class="inp" title="비밀번호 재확인" placeholder="비밀번호 재확인"
+                            <input type="password" id="password_1"  name="password_1" value="" class="inp" title="비밀번호 재확인" placeholder="비밀번호 재확인"
                                 maxlength="20" style="ime-mode:disabled;">
                         </span>
                     </div>
 
                     <div class="btn_area">
-                        <button id="loginBtn" type="submit" class="btn btn_full">Join</button>
+                        <button id="loginBtn" type="submit" class="btn btn_full"  onclick="memcheck_onclick()">Join</button>
                     </div>
                 </div>
             </form>
@@ -86,7 +86,7 @@
         </div>
 
     </footer>
-
+<script src="./js/login.js"></script>
 </body>
 
 </html>
