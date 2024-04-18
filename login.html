@@ -10,16 +10,14 @@
 </head>
 
 <body>
-    <!-- 헤더 -->
+    <!-- Header -->
     <div class="header_top">
         <header>
-
             <div class="header_logo">
-                <img src="./img/logo.png" alt="" onClick= "location.href='index.html'">
+                <img src="./img/logo.png" alt="" onClick="location.href='index.html'">
             </div>
-
-            <p class="header_login" onClick= "location.href='login.html'">로그인 |</p>
-            <p class="header_member" onClick= "location.href='member.html'">회원가입</p>
+            <p class="header_login" onClick="location.href='login.html'">로그인 |</p>
+            <p class="header_member" onClick="location.href='member.html'">회원가입</p>
             <ul>
                 <li>메뉴안내</li>
                 <li>이벤트안내</li>
@@ -30,7 +28,8 @@
 
         </header>
     </div>
-    <!-- 메인 -->
+
+    <!-- 로그인폼 -->
     <div class="main">
         <div class="content">
             <h2 id="welcomeMessage" class="h_tit h_tit4" style="display:none;"></h2>
@@ -41,25 +40,26 @@
             <form id="loginForm" name="loginForm" method="post">
                 <div>
                     <div class="intro_logo">
-                        <img src="./img/logo.png" alt="" onClick= "location.href='index.html'">
+                        <img src="./img/logo.png" alt="" onClick="location.href='index.html'">
                     </div>
                     <legend>로그인 정보를 입력해주세요</legend>
                     <div class="login_inp_area">
-                        <div >
-                            <span >
+                        <div>
+                            <span>
                                 <input type="text" id="id" name="id" class="inp" autocapitalize="off" title="아이디(이메일)"
                                     placeholder="아이디(이메일)" value="" maxlength="45" autocomplete="off">
                             </span>
-                        
+
                         </div>
                         <span class="inp_bx">
                             <input type="password" id="password" class="inp" title="비밀번호" placeholder="비밀번호"
                                 maxlength="20" style="ime-mode:disabled;">
                         </span>
                     </div>
-
+                    <!-- Login 버튼 -->
                     <div class="btn_area">
-                        <button id="loginBtn" type="submit" class="btn btn_full" onclick="check_onclick()" value="check">Login</button>
+                        <button id="loginBtn" type="submit" class="btn btn_full" onclick="check_onclick()"
+                            value="check">Login</button>
                     </div>
                 </div>
             </form>
@@ -67,10 +67,10 @@
 
         </div>
     </div>
-    <!-- 푸터 -->
+    <!-- Footer -->
     <footer>
         <div class="footlogo">
-            <img src="./img/logo.png" alt="" onClick= "location.href='index.html'">
+            <img src="./img/logo.png" alt="" onClick="location.href='index.html'">
         </div>
         <div class="footinfo">
             <p>이용약관</p>
@@ -80,7 +80,7 @@
         </div>
 
     </footer>
-<script src="./js/login.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>

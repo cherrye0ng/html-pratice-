@@ -1,6 +1,5 @@
 
-
-// 서브메뉴 선택하면 메인메뉴 내용변경 이벤트 
+// 서브메뉴 선택하면 메인타이틀 내용변경 이벤트 
 document.getElementById('mainMenu').addEventListener('click', function() {
     document.querySelector('.mainpagetitle').innerText = "메인메뉴";
 });
@@ -14,7 +13,7 @@ document.getElementById('toppingMenu').addEventListener('click', function() {
 });
 
 
-// 선택한 서브메뉴 따라서 이미지 내용변경 
+// 선택한 서브메뉴 따라서 이미지 내용변경  // 현재 서브타이틀은 메인메뉴로 !! 
 var currentMenu = 'mainMenu';
 toggleMenu(currentMenu);
 
@@ -30,6 +29,7 @@ document.getElementById('toppingMenu').addEventListener('click', function() {
     changeMenu('toppingMenu');
 });
 
+//  changeMenu 
 function changeMenu(menuId) {
     if (menuId !== currentMenu) {
         toggleMenu(menuId);
@@ -37,6 +37,7 @@ function changeMenu(menuId) {
     }
 }
 
+// toggleMenu
 function toggleMenu(menuId) {
     var menus = document.querySelectorAll('.slider-content');
     for (var i = 0; i < menus.length; i++) {
@@ -53,10 +54,9 @@ function toggleMenu(menuId) {
 // 자동 슬라이더 
 document.addEventListener('DOMContentLoaded', function () {
     var mySwiper = new Swiper('.swiper-container', {
-        // 옵션 설정
-        loop: true, // 슬라이드 반복 여부
+        loop: true, // 슬라이드 반복되도록
         autoplay: {
-            delay: 2000, // 자동 넘김 간격 (ms)
+            delay: 2000, // 2초간격 설정
         },
     });
 });

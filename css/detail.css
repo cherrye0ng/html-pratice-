@@ -1,3 +1,6 @@
+/* 상세페이지 - detail.html CSS */
+
+
 .detail{
     min-height: 593px;
     padding: 96px 0px 66px 0px;
@@ -43,7 +46,19 @@
 
 }
 
+    li{
+        list-style: none;
+        cursor: pointer;
+    }
 
+
+    .container_1 .btn_area .btn_full:first-child {
+        margin-top: 55px;
+    }
+
+/* --------------Bitton CSS ------------------ */
+
+/* 빨간버튼 css 공통 */
 .container_1 .btn {
     display: inline-block;
     width: 162px;
@@ -60,12 +75,6 @@
     cursor: pointer;
 }
 
-#storeBtn {
-    background-color: rgb(255 193 54); 
-    border-color:  rgb(255 193 54);
-}
-
-
 .container_1 .btn_area .btn {
     border-radius: 8px;
 }
@@ -81,16 +90,9 @@
     letter-spacing: -0.32px;
 }
 
+/* 지점 찾으러가기 버튼 */
+#storeBtn {
+    background-color: rgb(255 193 54); 
+    border-color:  rgb(255 193 54);
+}
 
-
-
-
-    li{
-        list-style: none;
-        cursor: pointer;
-    }
-
-
-    .container_1 .btn_area .btn_full:first-child {
-        margin-top: 55px;
-    }

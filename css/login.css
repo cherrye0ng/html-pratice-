@@ -1,5 +1,6 @@
+/* 로그인페이지 - Login.html CSS */
 
-
+/* 빨간버튼 css 공통 */
 .btn {
     display: inline-block;
     width: 162px;
@@ -15,7 +16,6 @@
     border-radius: 8px;
     cursor: pointer;
 }
-
 
 .btn_area .btn {
     border-radius: 8px;
@@ -38,6 +38,8 @@
     padding: 38px 45px 70px;
     box-sizing: border-box;
 }
+
+/* input 공통 CSS */
 .inp {
     display: inline-block;
     padding: 6px 9px;
@@ -54,7 +56,6 @@
     box-sizing: border-box;
     border-radius: 8px;
 }
-
 
 #id{
     margin-bottom: 20px;
